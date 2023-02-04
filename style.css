@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+ body {
+     font-family: -apple-system, 'Inter', sans-serif;
+ }
+
+ :root {
+     --body-bg:hsl(0, 0%, 98%);
+     --card-bg: #e0e0e0;
+     --card-bd-col: #bdbdbd;
+     --text-color: hsla(0, 0%, 3%, 0.267);
+ }
+
+ .dark_mode {
+     --body-bg:hsl(235, 21%, 11%);
+     --card-bg: hsl(233, 14%, 35%);
+     --card-bd-col: #212121;
+     --text-color: #f5f5f5;
+ }
+
+ body {
+     margin: 0;
+     background: var(--body-bg);
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+     justify-content: center;
+     margin-top: 100px;
+    /* background-image: url(/images/bg-desktop-dark.jpg) no-repeat; */
+ }
+.card.todos{
+    margin-top: 40px;
+    border-radius: 0;
+    padding:0 40px 0 0;
+    
+   
+}
+
+ .card {
+     padding: 15px 20px 15px 20px;
+     background: var(--card-bg);
+     box-shadow: 5px 5px 10px -3px rgba(0, 0, 0, .3);
+     border: 1px solid var(--card-bd-col);
+     width: 500px;
+     border-radius: 10px;
+    color: var(--text-color);
+     
+
+ }
+ .card:focus{
+    outline: none;
+ }
+ h2{
+    color: #fff;
+    letter-spacing: .5em;
+    font-weight: 900;
+    
+    
+ }
+
+ .card>p {
+     color: var(--text-color);
+ }
+
+ #theme_toggler {
+     position: absolute;
+     bottom: 5%;
+     right: 5%;
+     background: #0096c3;
+     padding: 20px;
+     border-radius: 30px;
+     color: #fff;
+     cursor: pointer;
+ }
+ input[type="checkbox"]:checked~span{
+ text-decoration:2px red line-through;
+ }
+  input[type="checkbox"]{
+    width: 1.15em;
+        height: 1.15em;
+        border: 0.15em solid currentColor;
+        
+  }
