@@ -87,6 +87,6 @@
         
   }
   p{
-    color: #fff;
+    color: var(--text-color);
     font-size: .8em;
   }
